@@ -8,7 +8,7 @@
 
 
 void
-mult_prog_1(char *host)
+mult_prog_1(char *host,int x ,int y)
 {
 	CLIENT *clnt;
 	int  *result_1;
@@ -21,8 +21,8 @@ mult_prog_1(char *host)
 		exit (1);
 	}
 #endif	/* DEBUG */
-	mult_1_arg.a =5;
-	mult_1_arg.b =4;
+	mult_1_arg.a =x;
+	mult_1_arg.b =y;
 	result_1 = mult_1(&mult_1_arg, clnt);
 	if (result_1 == (int *) NULL) {
 		clnt_perror (clnt, "call failed");
@@ -45,6 +45,6 @@ main (int argc, char *argv[])
 		exit (1);
 	}
 	host = argv[1];
-	mult_prog_1 (host);
+	mult_prog_1 (host,atoi(argv[2]),atoi(argv[3]));
 exit (0);
 }
