@@ -1,4 +1,4 @@
-RPC-using-RPCgen
+#RPC-using-RPCgen
 
 
 simp.x: this is the RPC protocol definition file. Although it looks like
@@ -24,12 +24,12 @@ simp_xdr.c: the XDR filter(s) needed for this application, this file
 	was created by rpcgen.
 
 
-How to run :
+##How to run :
 
 First go to the project root and run below three commands in linux terminal
 
-rpcinfo; rpcgen -C mult.x; make -f Makefile.mult; ./mult_server;
+#####rpcinfo; rpcgen -C mult.x; make -f Makefile.mult; ./mult_server;
 
 Then open a new terminal and run the client using the following command. In the below command, after the localhost user should give any number as the parameter to check odd, even property.
 
-./oddEven_client ur_server or localhost number_1 number_2;
+#####./oddEven_client ur_server or localhost number_1 number_2;
