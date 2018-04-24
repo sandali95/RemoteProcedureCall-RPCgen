@@ -1,7 +1,7 @@
 # RPC-using-RPCgen
 
 
-simp.x: this is the RPC protocol definition file. Although it looks like
+mult.x: this is the RPC protocol definition file. Although it looks like
         'C', it is not! This file is run through the C preprocessor and
 	the result is processed by rpcgen. rpcgen will create a header
 	file named mult.h containing data structure definitions and
