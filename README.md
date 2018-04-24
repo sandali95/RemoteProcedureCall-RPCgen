@@ -35,4 +35,4 @@ make -f Makefile.mult;
 
 Then open a new terminal and run the client using the following command. In the below command, after the localhost user should give any number as the parameter to check odd, even property.
 
-**./oddEven_client ur_server or localhost number_1 number_2;**
+**./mult_client (ur_server or localhost) number_1 number_2;**
