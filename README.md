@@ -1,5 +1,5 @@
 # RPC-using-RPCgen
-
+This RPC program supports multipication of two integers
 
 mult.x: this is the RPC protocol definition file. Although it looks like
         'C', it is not! This file is run through the C preprocessor and
@@ -16,11 +16,11 @@ mult_client.c: the main client program. This client just calls each of the remot
 
 mult_client.c: the main client program.
 
-simp_svc.c: the server main program, this was created by rpcgen.
+mult_svc.c: the server main program, this was created by rpcgen.
 
-simp_clnt.c: the client stubs, this file was created by rpcgen.
+mult_clnt.c: the client stubs, this file was created by rpcgen.
 
-simp_xdr.c: the XDR filter(s) needed for this application, this file
+mult_xdr.c: the XDR filter(s) needed for this application, this file
 	was created by rpcgen.
 
 
